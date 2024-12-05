@@ -130,12 +130,15 @@ Follow the steps below to set up and run this application locally.
 ## Example URLs
 
 Form page: http://localhost/candidate-resume-upload/index.html
+
 Candidate list: http://localhost/candidate-resume-upload/list.php
-Troubleshooting
+
+**Troubleshooting**
+
 Permission Errors: Ensure that the uploads/ folder has write permissions.
+
 Database Connection Errors: Double-check the MySQL server details in the PHP scripts.
+
 File Size Limit: If you encounter an issue with uploading large files, make sure to increase the upload_max_filesize and post_max_size in the php.ini file.
 
-## License
-This project is open-source and available under the MIT License. Feel free to modify and use it as needed!
 
