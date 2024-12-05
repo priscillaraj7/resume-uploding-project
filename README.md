@@ -46,63 +46,83 @@ Follow the steps below to set up and run this application locally.
 
    Launch the XAMPP/WAMP/MAMP Control Panel and start both Apache (for PHP) and MySQL (for database).
    
-3. Set Up MySQL Database
-Open phpMyAdmin by visiting http://localhost/phpmyadmin in your browser.
-Create a new database:
-Database Name: candidates_db
-Create a table to store the candidate data:
-Table Name: candidates
-Table Structure:
-id (INT, AUTO_INCREMENT, PRIMARY KEY)
-name (VARCHAR(255), NOT NULL)
-resume (VARCHAR(255), NOT NULL)
-Run the following SQL query in phpMyAdmin to create the database and table:
+2. Set Up MySQL Database
+   Open phpMyAdmin by visiting http://localhost/phpmyadmin in your browser.
+   
+   Create a new database:
+   
+   Database Name: `candidates_db`
+   
+   Create a table to store the candidate data:
+   
+   Table Name: `candidates`
+   
+   Table Structure:
+   
+   `id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   name (VARCHAR(255), NOT NULL)
+   resume (VARCHAR(255), NOT NULL)`
+   
+   Run the following SQL query in phpMyAdmin to create the database and table:
 
 #### sql
 Copy code
 
-`CREATE DATABASE candidates_db;`
+   `CREATE DATABASE candidates_db;`
 
-`USE candidates_db;`
+   `USE candidates_db;`
 
-`CREATE TABLE candidates (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    resume VARCHAR(255) NOT NULL
-);`
+   `CREATE TABLE candidates (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(255) NOT NULL,
+       resume VARCHAR(255) NOT NULL
+   );`
 
 3. Configure Database Connection in PHP
 In the upload.php and list.php files, make sure the following MySQL connection details are correct:
 
 #### php
+
 Copy code
 
-$servername = "localhost"; // Default MySQL server
+`$servername = "localhost"; // Default MySQL server`
 
-$username = "root"; // Default username
+`$username = "root"; // Default username`
 
-$password = ""; // Default password (if empty, leave as "")
+`$password = ""; // Default password (if empty, leave as "")`
 
-$dbname = "candidates_db"; // The name of your database
+`$dbname = "candidates_db"; // The name of your database`
 
 4. Download the Project
-Download or clone the repository to your local machine.
-bash
-Copy code
-git clone <your-repository-url>
-Move the project folder to the htdocs directory of your XAMPP installation (usually located in C:\xampp\htdocs\).
+   
+   Download or clone the repository to your local machine.
 
-5. Create uploads/ Directory
-Inside the project folder, create a directory called uploads/. This folder will store the uploaded resume files.
-Make sure that the folder has proper write permissions.
+   Copy code
 
-6. Run the Application
-Open your browser and navigate to http://localhost/<your-project-folder>/index.html.
-Fill out the form with your name and resume, and click the Upload button.
-After uploading, you will see a success message and a link to view all candidates.
-Click the View All Candidates link to see a list of all uploaded resumes. You can click the resume name to download the file.
+   git clone <your-repository-url>
+
+   Move the project folder to the htdocs directory of your XAMPP installation (usually located in C:\xampp\htdocs\).
+
+6. Create uploads/ Directory
+   
+   Inside the project folder, create a directory called uploads/.
+   
+   This folder will store the uploaded resume files.
+   
+   Make sure that the folder has proper write permissions.
+
+8. Run the Application
+
+   Open your browser and navigate to http://localhost/<your-project-folder>/index.html.
+   
+   Fill out the form with your name and resume, and click the Upload button.
+   
+   After uploading, you will see a success message and a link to view all candidates.
+   
+   Click the View All Candidates link to see a list of all uploaded resumes. You can click the resume name to download the file.
 
 ## Example URLs
+
 Form page: http://localhost/candidate-resume-upload/index.html
 Candidate list: http://localhost/candidate-resume-upload/list.php
 Troubleshooting
