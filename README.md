@@ -12,29 +12,41 @@ XAMPP/WAMP/MAMP: Local development environment for running PHP and MySQL server.
 
 ## Features
 
-Resume Upload: Users can upload their resumes along with their name.
-Candidate List: Users can view all candidates who have uploaded resumes with an option to download the resumes.
-Database Storage: All candidate data (name and resume file) are stored in a MySQL database.
+**Resume Upload:** Users can upload their resumes along with their name.
+
+**Candidate List:** Users can view all candidates who have uploaded resumes with an option to download the resumes.
+
+**Database Storage:** All candidate data (name and resume file) are stored in a MySQL database.
 
 ## Project Structure
 
-index.html: The main form where users can enter their name and upload their resume.
-upload.php: The PHP script that handles file uploads and stores the data in the database.
-list.php: Displays a list of all candidates and provides download links for their resumes.
-uploads/: Directory where uploaded resumes are stored.
-candidates_db: The MySQL database that stores candidate information.
+**index.html:** The main form where users can enter their name and upload their resume.
+
+**upload.php:** The PHP script that handles file uploads and stores the data in the database.
+
+**list.php:** Displays a list of all candidates and provides download links for their resumes.
+
+**uploads/:** Directory where uploaded resumes are stored.
+
+**candidates_db:** The MySQL database that stores candidate information.
 
 ## Prerequisites
 
 XAMPP/WAMP/MAMP (or any PHP, MySQL server setup) must be installed and running locally.
+
 MySQL: To store the candidate data.
+
 Setup and Installation
+
 Follow the steps below to set up and run this application locally.
 
 1. Install XAMPP/WAMP/MAMP (if not already installed)
-Download XAMPP from https://www.apachefriends.org/download.html and install it.
-Launch the XAMPP/WAMP/MAMP Control Panel and start both Apache (for PHP) and MySQL (for database).
-2. Set Up MySQL Database
+
+   Download XAMPP from https://www.apachefriends.org/download.html and install it.
+
+   Launch the XAMPP/WAMP/MAMP Control Panel and start both Apache (for PHP) and MySQL (for database).
+   
+3. Set Up MySQL Database
 Open phpMyAdmin by visiting http://localhost/phpmyadmin in your browser.
 Create a new database:
 Database Name: candidates_db
@@ -49,15 +61,15 @@ Run the following SQL query in phpMyAdmin to create the database and table:
 #### sql
 Copy code
 
-CREATE DATABASE candidates_db;
+`CREATE DATABASE candidates_db;`
 
-USE candidates_db;
+`USE candidates_db;`
 
-CREATE TABLE candidates (
+`CREATE TABLE candidates (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     resume VARCHAR(255) NOT NULL
-);
+);`
 
 3. Configure Database Connection in PHP
 In the upload.php and list.php files, make sure the following MySQL connection details are correct:
