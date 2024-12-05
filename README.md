@@ -124,7 +124,16 @@ Follow the steps below to set up and run this application locally.
    
    Click the View All Candidates link to see a list of all uploaded resumes. You can click the resume name to download the file.
 
+##Screenshots
+<img width="960" alt="Screenshot 2024-12-05 101816" src="https://github.com/user-attachments/assets/2f5b7c0d-bacd-4c76-a463-3c63cf2ce3dc">
+
+<img width="960" alt="Screenshot 2024-12-05 101842" src="https://github.com/user-attachments/assets/4770e6f4-1895-49ff-bd42-22b395736eca">
+
+<img width="960" alt="Screenshot 2024-12-05 101855" src="https://github.com/user-attachments/assets/77510992-2b5b-42fc-b24c-1d515085620c">
+
 ## Example URLs
+
+
 
 Form page: http://localhost/candidate-resume-upload/index.html
 
