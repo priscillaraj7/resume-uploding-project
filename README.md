@@ -139,7 +139,7 @@ Form page: http://localhost/candidate-resume-upload/index.html
 
 Candidate list: http://localhost/candidate-resume-upload/list.php
 
-**Troubleshooting**
+##Troubleshooting
 
 Permission Errors: Ensure that the uploads/ folder has write permissions.
 
