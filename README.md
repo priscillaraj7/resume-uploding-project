@@ -65,8 +65,8 @@ Follow the steps below to set up and run this application locally.
    
    Run the following SQL query in phpMyAdmin to create the database and table:
 
-#### sql
-Copy code
+   ### sql
+   Copy code
 
    `CREATE DATABASE candidates_db;`
 
@@ -81,17 +81,17 @@ Copy code
 3. Configure Database Connection in PHP
 In the upload.php and list.php files, make sure the following MySQL connection details are correct:
 
-#### php
+   ### php
 
-Copy code
+   Copy code
 
-`$servername = "localhost"; // Default MySQL server`
+   `$servername = "localhost"; // Default MySQL server`
 
-`$username = "root"; // Default username`
+   `$username = "root"; // Default username`
 
-`$password = ""; // Default password (if empty, leave as "")`
+   `$password = ""; // Default password (if empty, leave as "")`
 
-`$dbname = "candidates_db"; // The name of your database`
+   `$dbname = "candidates_db"; // The name of your database`
 
 4. Download the Project
    
@@ -103,7 +103,7 @@ Copy code
 
    Move the project folder to the htdocs directory of your XAMPP installation (usually located in C:\xampp\htdocs\).
 
-6. Create uploads/ Directory
+5. Create uploads/ Directory
    
    Inside the project folder, create a directory called uploads/.
    
@@ -111,9 +111,9 @@ Copy code
    
    Make sure that the folder has proper write permissions.
 
-8. Run the Application
+6. Run the Application
 
-   Open your browser and navigate to http://localhost/<your-project-folder>/index.html.
+   Open your browser and navigate to http://localhost/resume-upload/index.html.
    
    Fill out the form with your name and resume, and click the Upload button.
    
