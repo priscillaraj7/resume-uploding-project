@@ -49,6 +49,8 @@ Follow the steps below to set up and run this application locally.
    Download XAMPP from https://www.apachefriends.org/download.html and install it.
 
    Launch the XAMPP/WAMP/MAMP Control Panel and start both Apache (for PHP) and MySQL (for database).
+
+   If it is not working then follow these steps https://youtu.be/G2VEf-8nepc?si=PRa5iInW-Gl5KnCp
    
 2. Set Up MySQL Database
    
@@ -71,7 +73,6 @@ Follow the steps below to set up and run this application locally.
    Run the following SQL query in phpMyAdmin to create the database and table:
 
    ### sql
-   Copy code
 
    `CREATE DATABASE candidates_db;`
 
@@ -89,8 +90,6 @@ Follow the steps below to set up and run this application locally.
 
    ### php
 
-   Copy code
-
    `$servername = "localhost"; // Default MySQL server`
 
    `$username = "root"; // Default username`
@@ -102,8 +101,6 @@ Follow the steps below to set up and run this application locally.
 4. Download the Project
    
    Download or clone the repository to your local machine.
-
-   Copy code
 
    git clone <your-repository-url>
 
