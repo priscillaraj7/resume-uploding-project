@@ -4,11 +4,15 @@ This is a simple web application that allows users to upload their resumes along
 
 ## Technologies Used
 
-HTML: For creating the structure of the web pages.
-CSS: For styling the HTML form and improving the user interface.
-PHP: For handling server-side logic, including file uploads and database interactions.
-MySQL: For storing candidate data and resume file information.
-XAMPP/WAMP/MAMP: Local development environment for running PHP and MySQL server.
+**HTML:** For creating the structure of the web pages.
+
+**CSS:** For styling the HTML form and improving the user interface.
+
+**PHP:** For handling server-side logic, including file uploads and database interactions.
+
+**MySQL:** For storing candidate data and resume file information.
+
+**XAMPP/WAMP/MAMP:** Local development environment for running PHP and MySQL server.
 
 ## Features
 
@@ -36,7 +40,7 @@ XAMPP/WAMP/MAMP (or any PHP, MySQL server setup) must be installed and running l
 
 MySQL: To store the candidate data.
 
-Setup and Installation
+**Setup and Installation**
 
 Follow the steps below to set up and run this application locally.
 
@@ -47,6 +51,7 @@ Follow the steps below to set up and run this application locally.
    Launch the XAMPP/WAMP/MAMP Control Panel and start both Apache (for PHP) and MySQL (for database).
    
 2. Set Up MySQL Database
+   
    Open phpMyAdmin by visiting http://localhost/phpmyadmin in your browser.
    
    Create a new database:
@@ -79,7 +84,8 @@ Follow the steps below to set up and run this application locally.
    );`
 
 3. Configure Database Connection in PHP
-In the upload.php and list.php files, make sure the following MySQL connection details are correct:
+
+   In the upload.php and list.php files, make sure the following MySQL connection details are correct:
 
    ### php
 
